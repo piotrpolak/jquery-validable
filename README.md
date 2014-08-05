@@ -1,6 +1,6 @@
 # jQuery validable
 
-Basic validation compatible with older browser.
+Basic validation compatible with older browsers.
 
 The script prevents from sending an invalid form. Validation constraints are defined as class of the input elements. Supported HTML elements are:
 * input (text, password, checkbox, radio)
