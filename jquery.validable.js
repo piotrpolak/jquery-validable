@@ -2,7 +2,7 @@
  * @author Piotr Polak
  * @version 1.7.1
  * @date 18.07.2013
- * @url https://github.com/piotrpolak/jquery-validation
+ * @url https://github.com/piotrpolak/jquery-validable
  * 
  * This file should not be customized
  * 
