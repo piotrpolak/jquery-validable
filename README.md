@@ -2,9 +2,10 @@
 
 Basic validation compatible with older browser.
 
-The script prevents from sending an invalid form.
-
-This code comes from PepisCMS (2009)
+The script prevents from sending an invalid form. Validation constraints are defined as class of the input elements. Supported HTML elements are:
+* input (text, password, checkbox, radio)
+* textarea
+* select
 
 ## Validation rules
 
@@ -15,11 +16,13 @@ This code comes from PepisCMS (2009)
 | email			| Requires a valid email
 | date			| Requires a valid date in format DD-MM-YYYY
 | phonenumber	| Requires a valid 9 digits long (11 with country code) phone number
-| numeric		| Requires a valid numeri calue
+| numeric		| Requires a valid numeric calue
+
+If a field is found to be not validated, an `.invalid` class is being added to such element untill the value of the input is being corrected. The same `.invalid` class is being added for `label` related to the input (must have a proper `for` attribute).
 
 ## Usage
 
-```
+```html
 <style>
 .invalid {
 	color: red;
@@ -29,7 +32,8 @@ This code comes from PepisCMS (2009)
 
 <form class="validable" method="post" action="">
 	<p class="validation_error" style="display: none">The input is not valid</p>
-	<input type="text" name="email" class="required email">
+	<label for="email_input">Email:</label>
+	<input type="text" id="email_input" name="email" class="required email">
 	<input type="submit" name="submit" value="submit">
 </form>
 
@@ -40,3 +44,5 @@ $(document).ready(function() {
 });
 </script>
 ```
+
+This code comes from PepisCMS and dates back 2010 and might be a bit deprecated.
