@@ -45,4 +45,4 @@ $(document).ready(function() {
 </script>
 ```
 
-This code comes from PepisCMS and dates back 2010 and might be a bit deprecated.
+This code comes from PepisCMS and dates back 2010 and might be a bit outdated.
